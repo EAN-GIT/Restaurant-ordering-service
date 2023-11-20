@@ -1,7 +1,5 @@
 import { menuArray } from "./data.js";
 
-
-
 //get data item to show on the page
 function displayMenu() {
   const menuCard = menuArray
@@ -30,11 +28,8 @@ function displayMenu() {
   return menuCard;
 }
 
-
 function renderTotalOrderSection() {
-
-   
-    return `
+  return `
         <h3 class="order-title">Your order</h3>
        
         <div id ="order-container" class="order-container">
@@ -50,17 +45,13 @@ function renderTotalOrderSection() {
               <button id="complete-order-btn" disabled> Complete your Order</button>
           </div>
       `;
-  }
-
+}
 
 // document.getElementById("container").innerHTML = displayMenu();
 function render() {
-    document.getElementById("container").innerHTML = displayMenu();
-    document.getElementById("order-items-container").innerHTML =
-      renderTotalOrderSection();
-  }
+  document.getElementById("container").innerHTML = displayMenu();
+  document.getElementById("order-items-container").innerHTML =
+    renderTotalOrderSection();
+}
 
-
-
-
-  export { render, displayMenu, renderTotalOrderSection}
+export { render, displayMenu, renderTotalOrderSection };

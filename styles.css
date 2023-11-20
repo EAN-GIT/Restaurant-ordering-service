@@ -129,9 +129,26 @@ body {
 /* payment modal ===================*/
 
 
+.card-modal-close-btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color: transparent;
+    border: 1.5px solid #555;
+    color: #555;
+    border-radius: 50%;
+    padding: 0.143em 0.429em; /* 2px 6px */
+    font-size: 0.875rem; /* 14px */
+    cursor: pointer;
+  }
+  
+  .card-modal-close-btn:active {
+    background-color: #DEDEDE;
+  }
+
+
 
 .pay-modal-inner{
-    
     display: none;   /*later changed to flex*/
     flex-direction: column;
     max-width: 500px;
@@ -150,6 +167,7 @@ body {
 
 
 .payment-form{
+   
         display: flex;
         flex-direction: column;
         padding: 30px;
