@@ -54,9 +54,9 @@ body {
     margin-top: 0;
 }
 
-span{
+/* span{
     width: 100px;
-}
+} */
 
 .grey{
      color: #8B8B8B
@@ -83,6 +83,7 @@ span{
     font-weight: bold;
 }
 
+
 #order-btn-wrapper button{
     
     width: 100%;
@@ -90,6 +91,10 @@ span{
     padding: 30px 0;
     color: white;
     border :none;
+    font-size: medium;
+}
+#complete-order-btn :active{
+    background-color: #DEDEDE;
 }
 
 .order-details-container{
@@ -116,3 +121,87 @@ span{
   margin: auto;
   
 }
+
+
+
+
+
+/* payment modal ===================*/
+
+
+
+.pay-modal-inner{
+    
+    display: none;   /*later changed to flex*/
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 5px 5px 80px 1px #dcdbdb, -5px -5px 80px 1px #dcdbdb;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0; 
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+
+
+.payment-form{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+
+}
+
+.card-details-text {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 20px 0;
+  }
+
+input[type=text] {
+    padding: 13px 20px;
+    color: #757575;
+    margin-top: 14px; 
+    border: 1px solid #757575;
+    font-size: 16px; 
+    border-radius: 2px;
+  
+  }
+
+
+
+#pay-btn{
+    background-color: #16DB99;
+    color: white;
+    font-size: medium;
+    padding: 20px 0;
+    border: none;
+    margin-top: 30px; 
+    border-radius: 2px; 
+    width: 100%;
+    font-weight: bold;
+
+}
+
+
+
+/* =====Orde complete message====== */
+
+.order-complete-wrapper {
+    background-color: #ECFDF5;
+    margin: 40px 40px 60px 40px;
+    padding: 30px;
+  }
+  .payment-complete {
+    text-align: center;
+    color: #065F46;
+    font-size: 25px; 
+  }
+  
+  /* .rating {
+    margin-top: 10px;
+  } */
